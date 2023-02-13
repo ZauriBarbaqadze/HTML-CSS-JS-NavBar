@@ -1,0 +1,67 @@
+@import url('reset.css');
+@import url('fonts.css');
+
+/* Global Styles */
+
+.container {
+    margin: 0 auto;
+    max-width: 1170px;
+}
+/* Nav Styles */
+.nav-container {
+    width: 100%;
+    height: 60%;
+    background-color: #ce192f;
+}
+.nav-wrapper {
+    background-color: #ce192f;
+    max-width: 1170px;
+    margin: 0 auto;
+    align-items: center;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+.nav a {
+    color: white;
+    font-size: 20px;
+    user-select: none;
+}
+.logowrp {
+    display: flex;
+    align-items: center;
+}
+.logowrp h1 {
+    font-size: 32px;
+    font-family: 'Lobster', cursive;
+    color: white;
+}
+.logo {
+    width: 45px;
+    color: white;
+}
+.auth-wrapper {
+    display: flex;
+    width: 17%;
+    align-items: center;
+    justify-content: space-between;
+}
+.auth-wrapper a {
+    color: white;
+    font-size: 20px;
+}
+.reg-style {
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid white;
+    transition: all 0.3s;
+}
+.reg-style:hover {
+    background-color: white;
+    color: #ce192f;
+}
