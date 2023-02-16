@@ -27,11 +27,29 @@
                         <a href="#">სხვა</a>
                     </nav>
                     <div class="auth-wrapper font">
-                        <a href="#">შესვლა</a>
+                        <a id="loginbtn" href="#">შესვლა</a>
                         <a class="reg-style" href="#">რეგისტრაცია</a>
                     </div>
                 </div>
             </div>
         </header>
+        <div class="container auth">
+            <div class="login font">
+                <h2>ავტორიზაცია</h2>
+                <form action="submit">
+                    <label for="username">თქვენი ლოგინი</label>
+                    <input type="text" name="username" placeholder="თქვენი ლოგინი...">
+                    
+                    <label for="password">თქვენი პაროლი</label>
+                    <input type="password" name="passwrod" placeholder="თქვენი პაროლი">
+                    <div>
+                        <input type="checkbox" name="remember">
+                        <label for="remember">დამიმახსოვრე</label>
+                    </div>
+                    <button type="submit">შესვლა</button>
+                </form>
+            </div>
+        </div>
+        <script src="JavaScripts/main.js"></script>
     </body>
 </html>
