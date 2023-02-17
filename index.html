@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon" href="assets/icons/Tablogo.png">
-        <script src="https://kit.fontawesome.com/2d90eb6cba.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://kit.fontawesome.com/2d90eb6cba.css" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
@@ -22,7 +22,7 @@
                     </div>
                     <nav class="nav font">
                         <a href="#">მთავარი</a>
-                        <a href="#">ჟანრი</a>
+                        <a class="movies" href="#">ჟანრი</a>
                         <a href="#">მანგა</a>
                         <a href="#">სხვა</a>
                     </nav>
@@ -36,6 +36,7 @@
         <div class="container auth">
             <div class="login font">
                 <h2>ავტორიზაცია</h2>
+                <p class="avttext">გაიარე ავტორიზაცია რათა გადმოგეცეს პრივილეგიები</p>
                 <form action="submit">
                     <label for="username">თქვენი ლოგინი</label>
                     <input type="text" name="username" placeholder="თქვენი ლოგინი...">
@@ -44,9 +45,36 @@
                     <input type="password" name="passwrod" placeholder="თქვენი პაროლი">
                     <div>
                         <input type="checkbox" name="remember">
-                        <label for="remember">დამიმახსოვრე</label>
+                        <label for="remember">დამიმახსოვრე მე</label>
                     </div>
-                    <button type="submit">შესვლა</button>
+                    <button class="font" id="loginbutton" type="submit">შესვლა</button>
+                    <p class="regtext">არ გაქვთ შექმნილი აქაუნთი ? <Span id="regbtn">შექმენი აქედან</Span></p>
+                </form>
+            </div>
+        </div>
+        <div class="container regstyle">
+            <div class="register font">
+                <h2>რეგისტრაცია</h2>
+                <p class="regtxt">გაიარე რეგისტრაცია რათა გადმოგეცეს პრივილეგიები</p>
+                <form action="submit2">
+                    <label for="regusername">შეიყვანეთ ლოგინი</label>
+                    <input type="text" name="regusername" placeholder="შეიყვანეთ ლოგინი...">
+
+                    <label for="regmail">შეიყვანეთ მეილი</label>
+                    <input type="email" name="regmail" placeholder="შეიყვანეთ მეილი...">
+
+                    <label for="reppassword">შეიყვანეთ პაროლი</label>
+                    <input type="password" name="reppasswrod" placeholder="შეიყვანეთ პაროლი...">
+
+                    <label for="reppassword">გაიმეორეთ პაროლი</label>
+                    <input type="password" name="reppasswrod" placeholder="გაიმეორეთ პაროლი...">
+                    <div>
+                        <input type="checkbox" name="remember">
+                        <label for="remember">ვეთანხმები წესებს <a style="color: #eb2038;" href="#">წესების ნახვა</a></label>
+                    </div>
+
+                    <button class="font" id="registerbutton" type="submit2">რეგისტრაცია</button>
+                    <p class="avttxt">გაქვს უკვე ექაუნთი ? <Span id="loginbtn">გაიარე ავტორიზაცია</Span></p>
                 </form>
             </div>
         </div>

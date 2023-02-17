@@ -46,6 +46,7 @@ a {
 }
 * {
     box-sizing: border-box;
+	user-select: none;
 }
 .font {
 	font-family: "BPG Nino Mkhedruli Bold", sans-serif;
