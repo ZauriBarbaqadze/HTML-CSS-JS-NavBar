@@ -39,10 +39,17 @@
     display: flex;
     align-items: center;
 }
+.logowrp a {
+    display: flex;
+    align-items: center;
+}
 .logowrp h1 {
     font-size: 32px;
     font-family: 'Lobster', cursive;
     color: white;
+}
+.logowrp h1 span {
+    color: #ce192f;
 }
 .logo {
     width: 45px;
@@ -124,6 +131,12 @@
     transition: all 0.3s;
     cursor: pointer;
 }
+#loginbtn {
+    transition: all 0.3s;
+}
+#loginbtn:hover {
+    color: #ce192f;
+}
 #loginbutton:hover {
     font-size: 21px;
 }
@@ -177,8 +190,7 @@
     border-width: 1px;
 }
 .register form input:focus{
-    border-width: 1px;
-    
+    border-width: 1px;   
 }
 #registerbutton { 
     padding: 10px;
